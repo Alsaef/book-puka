@@ -29,7 +29,7 @@ const ReadList = () => {
             console.log(sortedByPage)
         }
         if (type === "ratings") {
-            const sortedByrating = [...readList].sort((a, b) => a.rating - b.rating);
+            const sortedByrating = [...readList].sort((a, b) => b.rating - a.rating);
             setReadList(sortedByrating)
         }
 
